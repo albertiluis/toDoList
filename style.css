@@ -1,0 +1,135 @@
+:root {
+    --bg: #F7F1F1;
+    --primary: #225329;
+    --primary-light: #48724e;
+    --secondary: #0E2431;
+    --gray: #666;
+    --font-family: 'Nunito', sans-serif;
+  }
+  small{
+    color: #ff5555;
+    font-weight: bold;
+    opacity: 0;
+  }
+  small.show{
+    opacity: 1;
+  }
+  html, body, div, h1, input, ul, li, label, span{
+    outline: nome;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg);
+    font-family: var(--font-family);
+  }
+  
+  input, button {
+    border: 0;
+    outline: none;
+  }
+  
+  #tarefas-app .container{
+    width: 100%;
+    max-width: 420px;
+    margin: 50px auto;
+    background-color: var(--primary);
+    padding: 3rem 2.5rem;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  #tarefas-app .container ~ .container{
+    margin-top:5px;
+  }
+    
+  #tarefas-app .app-cabecalho{
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+    
+  #tarefas-app .adicionar-tarefa-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+      
+  #tarefas-app .adicionar-tarefa-container #campo-texto-tarefa{
+    font-size: 18px;
+    padding: 1rem;
+  } 
+        
+  #tarefas-app .adicionar-tarefa-container #botao-submit-tarefa{
+    background: transparent;
+    color: inherit;
+    font-size: 17px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    padding: 0 1rem;
+    margin-left: 10px;
+    border-radius: 3px;
+  }
+
+  #tarefas-app ul li{
+    display: flex;
+    align-items: center;
+    justify-content: unsafe;
+    background-color: var(--primary-light);
+    padding: 1.5rem 2.5rem;
+    margin: .4rem -2.5rem;
+  }
+
+  #tarefas-app ul li label #check-tarefa:checked ~ span{
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+            
+  #tarefas-app ul li label #check-tarefa:checked {
+    opacity: 0.5;
+  }
+   
+  #tarefas-app ul li label #titulo-tarefa{
+    font-size: 20px;
+    margin-left: .3rem;
+  }
+        
+  #tarefas-app ul li.completed{
+    font-style: italic;
+    text-decoration: line-through;
+  }
+    
+  #tarefas-app ul li.completed *{
+    opacity: .5;
+  }
+        
+  #tarefas-app button {
+    text-align: right;
+    color: #fff;
+    background: transparent;
+    opacity: 0.5;
+  }
+        
+  #tarefas-app button:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+        
+  #tarefas-app li{
+    justify-content: space-between;
+  }
+
+          
+  .marcar-deletar-tarefas {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .marcar-deletar-tarefas button{
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
